@@ -10,7 +10,7 @@ export const SponsorIcon= [
     {
         imageUrl: Devfolio,
         name: "DEVFOLIO LOGO",
-        URL: "https://devfolio.co/"
+        URL: "https://devfolio.co"
     },
     // {
     //     imageUrl: Filecoin,
@@ -20,7 +20,7 @@ export const SponsorIcon= [
     {
         imageUrl: EthIndia,
         name: "ETHINDIA LOGO",
-        URL: "https://ethindia.co/"
+        URL: "https://ethindia.co"
 
     },
     {

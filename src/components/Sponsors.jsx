@@ -4,14 +4,17 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Sponsors = () => {
   const onButtonClick = () => {
-        const pdfUrl = "./nh24_brochure.pdf";
-        const link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "NH24 Brochure.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+   
+    // Clean up and remove the link
+    const pdfUrl = "./nh24_brochure.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "NH-2024-Brochure.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+      
+  };
   return (
     <div className="py-[90px]">
       <Reveal>
@@ -46,7 +49,7 @@ const Sponsors = () => {
             <p className="text-white mb-4 text-lg">
               Interested in sponsoring NMIT Hacks 2024? Click the button below!
             </p>
-         
+       <a href="https://xaze26ca6jzrysyb.public.blob.vercel-storage.com/nh24%20brochure-IPOvPal1b3P2LIeeIE0PTFxAs8EMr3" target="_blank">
           <button className="bg-secondary hover:bg-transparent border-2 border-secondary  hover:text-secondary text-primary font-bold py-2 px-4 rounded inline-flex items-center" onClick={onButtonClick}>
             <svg
               className="fill-current w-4 h-4 mr-2"
@@ -57,6 +60,7 @@ const Sponsors = () => {
             </svg>
               <span>Download</span>
           </button>
+        </a>
         </div>
       </div>
     </div>
